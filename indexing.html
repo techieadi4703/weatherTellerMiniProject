@@ -2,7 +2,7 @@
  <html lang="en">
  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width= , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <title>WeatherApplication</title>
     <link rel="stylesheet" href="styling.css">
  </head>
@@ -11,9 +11,35 @@
     <div class="card">
         <div class="search">
             <input type="text" placeholder="Enter City...">
-            <button><img src="search.png" alt=""></button>
+            <button><img src="search.png" id="photu"></button>
+        </div>
+        <div class="error">
+            <p>-Invalid City Name-</p>
+        </div>
+        <div class="weather">
+            <img src="rain.png" class="wicon">
+            <h1 class="temp">-TEMP-</h1>
+            <h2 class="city">-CITY-</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="humidity.png" alt="">
+                    <div>
+                        <p class="humidity">-%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="wind.png" alt="">
+                    <div>
+                        <p class="wind">-km/hr</p>
+                        <p>WindSpeed</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
- </body>
- </html>
+    <script src="scripting.js"></script>
+
+</body>
+</html>
